@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/richasdy/AndroidStudioProjects/FAMSBTP-master-ed0aae1c29e915ca420b9b87f8057b30b5cb5efa/DeviceList/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/richasdy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/669806f8a516e80107d89ff9f9b72b4d/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    }
+                }
+            ]
+        }
+    ]
+}

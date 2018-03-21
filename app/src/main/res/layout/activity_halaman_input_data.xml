@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ls="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inventaris.fams.HalamanInputData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <!-- :nextFocusUp and :nextFocusLeft have been set to the id of this component
+            to prevent the dummy from receiving focus again -->
+            <AutoCompleteTextView
+                android:id="@+id/autotext"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:nextFocusLeft="@id/autotext"
+                android:nextFocusUp="@id/autotext" />
+
+            <LinearLayout
+                android:id="@+id/tes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:nextFocusLeft="@+id/tes"
+                android:nextFocusUp="@+id/tes"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtTotalDataRegister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total data yang akan di register sebanyak :"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnLihatDataRegister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/colorPrimary"
+                        android:text="Lihat Data"
+                        android:textAllCaps="false"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+                <com.farbod.labelledspinner.LabelledSpinner
+                    android:id="@+id/spinnerSource"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:labelText="Source"
+                    app:widgetColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="Gedung"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/spinnerGedung"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:id="@+id/txtGedung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="gedung Utama"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_showarrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Lantai"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/spinnerLantai"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:id="@+id/txtLantai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Lantai 2"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_showarrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Ruang"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/spinnerRuang"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:id="@+id/txtRuang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Ruangan Administrasi"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_showarrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Type Detail"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/spinnerTipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:id="@+id/txtTipe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="Komputer"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_showarrow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Nilai Aset"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <com.blackcat.currencyedittext.CurrencyEditText
+                    android:id="@+id/NilaiAset"
+                    android:hint=""
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edTahun"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/logo"
+                    android:layout_marginTop="5dp"
+                    android:hint="Tahun"
+                    android:inputType="number"
+                    android:textSize="14dp"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelTextColor="@android:color/black"
+                    app:met_primaryColor="@android:color/black" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edMerk"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/logo"
+                    android:hint="Merk"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="14dp"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelTextColor="@android:color/black"
+                    app:met_primaryColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnImage"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/ic_pickimage"
+                    android:text="Choose Image"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Create Asset"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

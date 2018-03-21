@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/richasdy/AndroidStudioProjects/FAMSBTP-master-ed0aae1c29e915ca420b9b87f8057b30b5cb5efa/DeviceList/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v12/values-v12.xml",
+            "map": [
+                {
+                    "source": "/home/richasdy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/669806f8a516e80107d89ff9f9b72b4d/res/values-v12/values-v12.xml",
+                    "from": {
+                        "startLines": "2,5,8,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,279,479,598",
+                        "endLines": "4,7,8,9",
+                        "endColumns": "12,12,118,94",
+                        "endOffsets": "274,474,593,688"
+                    }
+                }
+            ]
+        }
+    ]
+}

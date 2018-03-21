@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DeviceList/DeviceList.iml" filepath="$PROJECT_DIR$/DeviceList/DeviceList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FAMSBTP-master-ed0aae1c29e915ca420b9b87f8057b30b5cb5efa.iml" filepath="$PROJECT_DIR$/FAMSBTP-master-ed0aae1c29e915ca420b9b87f8057b30b5cb5efa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rfid.AsciiProtocol-Library/Rfid.AsciiProtocol-Library.iml" filepath="$PROJECT_DIR$/Rfid.AsciiProtocol-Library/Rfid.AsciiProtocol-Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
